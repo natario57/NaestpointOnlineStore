@@ -15,111 +15,26 @@
 <body>
 
   <!-- Nav Bar -->
-  
-  <header id="header">
-    <section class="navbar-one">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid nav-container">
-          <div class="logo">
-            <a class="navbar-brand" href="#"><img class="main-logo" src="images/Naest-Logo.png" alt="Logo"></a>
-          </div>
-          <div class="search-bar">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search entire store" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-            </form>
-          </div>
-          <div class="profile-link">
-            <li class="nav-item link-socials">
-              <img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="...">
-              <img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="...">
-              <img src="./images/Bag.svg" class="nav-svg cart-icon" alt="...">
-              <div class="search">
-                <span class="ikon">
-                  <img src="./images/Search-icon.svg" class="nav-svg searchBtn" alt="...">
-                  <img src="./images/Close-icon.svg" class="nav-svg closeBtn" alt="...">
-                </span>
-              </div>
-            </li>
-          </div>
-          <div class="searchBox">
-            <input type="text" placeholder="Serach entire store">
-          </div>
-        </div>
-      </nav>
-    </section>
-    <section class="navbar-two">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid nav-container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars fa-lg" style="color: #111111;"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="category-option">
-              <i class="fa-solid fa-list" style="color: #121212; height: 18px;"></i>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  All Category
-                  <i class="bi bi-chevron-down"></i></a>
-                <ul class="dropdown-menu category">
-                  <li><a class="dropdown-item" href="#">Men's Fahion</a></li>
-                  <li><a class="dropdown-item" href="#">Women's Fashion</a></li>
-                  <li><a class="dropdown-item" href="#">Kids Fashion</a></li>
-                  <li><a class="dropdown-item" href="#">Accessories</a></li>
-                </ul>
-              </li>
-            </div>
-            <div class="navigation-option">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/whatshot.html">WHAT'S HOT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="shopall.html">SHOP ALL</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link nav-shopall" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    COLLECTIONS
-                    <i class="bi bi-chevron-down"></i></a>
-                  <ul class="dropdown-menu collection">
-                    <div class="collection-list">
-                      <li><a class="dropdown-item" href="toprose.html">TOPROSE CLOTHING</a></li>
-                      <li><a class="dropdown-item" href="#">SEAMLESS COUTURE</a></li>
-                      <li><a class="dropdown-item" href="#">LEO DESIGN</a></li>
-                      <li><a class="dropdown-item" href="#">SOPHIE LINE</a></li>
-                    </div>
-                    <div class="collection-image">
-                      <img src="images/Shopnow.svg" alt="">
-                    </div>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/singleproduct.html">SINGLE PRODUCT</a>
-                </li>
-              </ul>
-            </div>
-            <div class="small-board">
-              <h6 class="board-title">BLACK FRIDAYS</h3>
-              <p class="board-text">26th May 2024</p>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-  </header>
 
-
+  <special-header></special-header>
 
   <!-- Products-1 -->
 
-  <section id="product">
+  <section id="shop-all">
     <div class="product-top">
-      <h3>NEW ARRIVALS</h3>
-      <hr>
-      <p class="product-message">WE SELECTED THE BEST BUYS, FREQUENTLY VIEWED WEAR, NEW ARRIVALS FOR YOUR INTEREST.</p>
+      <div class="filter">
+        <button type="button" class="filtered all active"> <a href="#">All</a></button>
+        <button type="button" class="filtered shirt"> <a href="#">Shirt</a></button>
+        <button type="button" class="filtered polo"> <a href="#">Polo</a></button>
+        <button type="button" class="filtered trouser"> <a href="#">Trouser</a></button>
+        <button type="button" class="filtered skirt"> <a href="#">Skirt</a></button>
+        <button type="button" class="filtered gown"> <a href="#">Gown</a></button>
+        <button type="button" class="filtered suit"> <a href="#">Suit</a></button>
+        <button type="button" class="filtered sweater"> <a href="#">Sweater</a></button>
+        <button type="button" class="filtered overall"> <a href="#">Overall</a></button>
+        <button type="button" class="filtered native"> <a href="#">Native</a></button>
+        <button type="button" class="filtered t-shirt"> <a href="#">T-shirt</a></button>
+      </div>
     </div>
 
     <div class="row g-4">
@@ -132,7 +47,7 @@
             <h3 class="product-title">Irish Silky Gown</h3>
             <div class="product-info">
               <p class="product-price">N20,200.50</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -149,7 +64,7 @@
             <h3 class="product-title">Italian Cotton Gown</h3>
             <div class="product-info">
               <p class="product-price">N23,000.00</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -166,7 +81,7 @@
             <h3 class="product-title">Canzo Seamless Stretch</h3>
             <div class="product-info">
               <p class="product-price">N19,600.99</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -183,7 +98,7 @@
             <h3 class="product-title">Cashmir Ethical Corron</h3>
             <div class="product-info">
               <p class="product-price">N20,200.50</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -200,7 +115,7 @@
             <h3 class="product-title">Golden Weave Gown</h3>
             <div class="product-info">
               <p class="product-price">N102,000.00</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -217,7 +132,7 @@
             <h3 class="product-title">British Wool Gown</h3>
             <div class="product-info">
               <p class="product-price">N102,000.00</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -234,7 +149,7 @@
             <h3 class="product-title">Canzo Seamless Stretch</h3>
             <div class="product-info">
               <p class="product-price">N102,000.00</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -251,7 +166,7 @@
             <h3 class="product-title">sartin Ethical Close</h3>
             <div class="product-info">
               <p class="product-price">N102,000.00</p>
-              <div class="portfolio-button">
+              <div class="option-button">
                 <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
                 <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
               </div>
@@ -260,7 +175,13 @@
         </div>
       </div>
     </div>
-    <button type="button" class="product-button"> <a href="#">VIEW MORE</a></button>
+    <div class="pages">
+      <button type="button" class="directions"> <a href="#"><i class="bi bi-chevron-left"></i></a></button>
+      <button type="button" class="page one active"> <a href="#">1</a></button>
+      <button type="button" class="page two"> <a href="#">2</a></button>
+      <button type="button" class="page three"> <a href="#">3</a></button>
+      <button type="button" class="directions"> <a href="#"><i class="bi bi-chevron-right"></i></a></button>
+    </div>
   </section>
 
   <special-footer></special-footer>

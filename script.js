@@ -191,9 +191,9 @@ class SpecialHeader extends HTMLElement {
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="category-option">
-                  <i class="fa-solid fa-list" style="color: #121212; height: 18px;"></i>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-list"></i>  
                       All Category
                       <i class="bi bi-chevron-down"></i></a>
                     <ul class="dropdown-menu category">
@@ -210,10 +210,10 @@ class SpecialHeader extends HTMLElement {
                       <a class="nav-link" href="/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/whatshot.html">WHAT'S HOT</a>
+                      <a class="nav-link" href="/whats-hot.html">WHAT'S HOT</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="shopall.html">SHOP ALL</a>
+                      <a class="nav-link" href="shop-all.html">SHOP ALL</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link nav-shopall" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -221,7 +221,7 @@ class SpecialHeader extends HTMLElement {
                         <i class="bi bi-chevron-down"></i></a>
                       <ul class="dropdown-menu collection">
                         <div class="collection-list">
-                          <li><a class="dropdown-item" href="toprose.html">TOPROSE CLOTHING</a></li>
+                          <li><a class="dropdown-item" href="top-rose.html">TOPROSE CLOTHING</a></li>
                           <li><a class="dropdown-item" href="#">SEAMLESS COUTURE</a></li>
                           <li><a class="dropdown-item" href="#">LEO DESIGN</a></li>
                           <li><a class="dropdown-item" href="#">SOPHIE LINE</a></li>
@@ -232,7 +232,7 @@ class SpecialHeader extends HTMLElement {
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/singleproduct.html">SINGLE PRODUCT</a>
+                      <a class="nav-link" href="/single-product.html">SINGLE PRODUCT</a>
                     </li>
                   </ul>
                 </div>
