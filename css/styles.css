@@ -297,7 +297,14 @@ header.hide {
 }
 
 .collection-image img {
-    width: 100%;
+    position: absolute;
+    width: 50%;
+    opacity: 0;
+    padding-right: 16px;
+}
+
+.collection-image:hover .hover2 {
+    opacity: 1;
 }
 
 .collection.show {
@@ -977,19 +984,21 @@ hr {
     height: 95%;
 }
 
-#items {
-    padding: 2rem 6rem 2rem;
-    text-align: start;
-    border-top: 1px var(--color-black) solid;
-}
-
 .landscape-image {
     height: 100%;
 }
 
-.size-description {
-    margin-bottom: 4px;
-    margin-right: 1rem;
+#items {
+    padding: 2rem 6rem 4rem;
+    text-align: start;
+    border-top: 1px var(--color-black) solid;
+}
+
+.collection-heading {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .measurement {
@@ -1056,6 +1065,11 @@ hr {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.size-description {
+    margin-bottom: 4px;
+    margin-right: 1rem;
 }
 
 .addtocart-button {
@@ -1158,12 +1172,77 @@ hr {
     cursor: pointer;
 }
 
+/* Cart */
+
+#check-out {
+    text-align: center;
+    background-color: var(--color-white);
+    margin-top: 8rem;
+}
+
+.cart-top {
+    background-image: url('../images/cart-top-img.svg');
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-container {
+    padding: 2rem 6rem;
+}
+
+.cart-border-left {
+    border: 1px var(--color-black) solid;
+    padding: 2rem;
+}
+
+.cart-border-right {
+    border: 1px var(--color-black) solid;
+}
+
+.cart-heading {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-align: start;
+}
+
+.heading-line {
+    width: 10%;
+}
+
+.payment-option {
+    display: flex;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+    padding: 12px 16px 12px;
+    margin: 0 1rem;
+}
+
+.bi-credit-card {
+    font-size: 32px;
+    margin-right: 16px;
+    display: flex;
+}
+
 /* Product @media */
 
 @media screen and (max-width: 992px) {
 
     #whats-hot {
         margin-top: 3rem;
+    }
+
+    .about-collection {
+        padding: 4rem 0 4rem 0rem;
+    }
+
+    #check-out {
+        margin-top: 4rem;
     }
 
 }
@@ -1196,6 +1275,14 @@ hr {
     #collection {
         padding: 4rem 0.5rem;
         margin-top: 0;
+    }
+
+    #items {
+        padding: 1rem .5rem 2rem;
+    }
+
+    #check-out {
+        margin-top: 2rem;
     }
 
     .about-collection {

@@ -72,7 +72,7 @@ let searchBox = document.querySelector('.searchBox');
         searchBtn.classList.add('active')
     }
 
-closeBtn.onclick = function () {
+    closeBtn.onclick = function () {
         searchBox.classList.remove('active')
         closeBtn.classList.remove('active')
         searchBtn.classList.remove('active')
@@ -152,99 +152,102 @@ class SpecialHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header id="header">
-        <section class="navbar-one">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid nav-container">
-              <div class="logo">
-                <a class="navbar-brand" href="#"><img class="main-logo" src="images/Naest-Logo.png" alt="Logo"></a>
-              </div>
-              <div class="search-bar">
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search entire store" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-                </form>
-              </div>
-              <div class="profile-link">
-                <li class="nav-item link-socials">
-                  <img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="...">
-                  <img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="...">
-                  <img src="./images/Bag.svg" class="nav-svg cart-icon" alt="...">
-                  <div class="search">
-                    <span class="ikon">
-                      <img src="./images/Search-icon.svg" class="nav-svg searchBtn" alt="...">
-                      <img src="./images/Close-icon.svg" class="nav-svg closeBtn" alt="...">
-                    </span>
-                  </div>
-                </li>
-              </div>
-              <div class="searchBox">
-                <input type="text" placeholder="Serach entire store">
-              </div>
-            </div>
-          </nav>
-        </section>
-        <section class="navbar-two">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid nav-container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars fa-lg" style="color: #111111;"></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="category-option">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-list"></i>  
-                      All Category
-                      <i class="bi bi-chevron-down"></i></a>
-                    <ul class="dropdown-menu category">
-                      <li><a class="dropdown-item" href="#">Men's Fahion</a></li>
-                      <li><a class="dropdown-item" href="#">Women's Fashion</a></li>
-                      <li><a class="dropdown-item" href="#">Kids Fashion</a></li>
-                      <li><a class="dropdown-item" href="#">Accessories</a></li>
-                    </ul>
+          <section class="navbar-one">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid nav-container">
+                <div class="logo">
+                  <a class="navbar-brand" href="#"><img class="main-logo" src="images/Naest-Logo.png" alt="Logo"></a>
+                </div>
+                <div class="search-bar">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search entire store" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                  </form>
+                </div>
+                <div class="profile-link">
+                  <li class="nav-item link-socials">
+                    <img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="...">
+                    <img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="...">
+                    <img src="./images/Bag.svg" class="nav-svg cart-icon" alt="...">
+                    <div class="search">
+                      <span class="ikon">
+                        <img src="./images/Search-icon.svg" class="nav-svg searchBtn" alt="...">
+                        <img src="./images/Close-icon.svg" class="nav-svg closeBtn" alt="...">
+                      </span>
+                    </div>
                   </li>
                 </div>
-                <div class="navigation-option">
-                  <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/whats-hot.html">WHAT'S HOT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="shop-all.html">SHOP ALL</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link nav-shopall" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        COLLECTIONS
-                        <i class="bi bi-chevron-down"></i></a>
-                      <ul class="dropdown-menu collection">
-                        <div class="collection-list">
-                          <li><a class="dropdown-item" href="top-rose.html">TOPROSE CLOTHING</a></li>
-                          <li><a class="dropdown-item" href="#">SEAMLESS COUTURE</a></li>
-                          <li><a class="dropdown-item" href="#">LEO DESIGN</a></li>
-                          <li><a class="dropdown-item" href="#">SOPHIE LINE</a></li>
-                        </div>
-                        <div class="collection-image">
-                          <img src="images/Shopnow.svg" alt="">
-                        </div>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/single-product.html">SINGLE PRODUCT</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="small-board">
-                  <h6 class="board-title">BLACK FRIDAYS</h3>
-                  <p class="board-text">26th May 2024</p>
+                <div class="searchBox">
+                  <input type="text" placeholder="Serach entire store">
                 </div>
               </div>
-            </div>
-          </nav>
-        </section>
-      </header>
+            </nav>
+          </section>
+          <section class="navbar-two">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa-solid fa-bars fa-lg" style="color: #111111;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="category-option">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-list"></i>  
+                        All Category
+                        <i class="bi bi-chevron-down"></i></a>
+                      <ul class="dropdown-menu category">
+                        <li><a class="dropdown-item" href="#">Men's Fahion</a></li>
+                        <li><a class="dropdown-item" href="#">Women's Fashion</a></li>
+                        <li><a class="dropdown-item" href="#">Kids Fashion</a></li>
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                  <div class="navigation-option">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/whats-hot.html">WHAT'S HOT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="shop-all.html">SHOP ALL</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link nav-shopall" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          COLLECTIONS
+                          <i class="bi bi-chevron-down"></i></a>
+                        <ul class="dropdown-menu collection">
+                          <div class="collection-list">
+                            <li><a class="dropdown-item" href="top-rose.html">TOPROSE CLOTHING</a></li>
+                            <li><a class="dropdown-item" href="cart.html">SEAMLESS COUTURE</a></li>
+                            <li><a class="dropdown-item" href="#">LEO DESIGN</a></li>
+                            <li><a class="dropdown-item" href="#">SOPHIE LINE</a></li>
+                          </div>
+                          <div class="collection-image">
+                            <img src="images/Shopnow.svg" class="img-hover hover1" alt="">
+                            <img src="images/Shopnow2.svg" class="img-hover hover2" alt="">
+                            <img src="images/Shopnow3.svg" class="img-hover hover3" alt="">
+                            <img src="images/Shopnow4.svg" class="img-hover hover4" alt="">
+                          </div>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/single-product.html">SINGLE PRODUCT</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="small-board">
+                    <h6 class="board-title">BLACK FRIDAYS</h3>
+                    <p class="board-text">26th May 2024</p>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </section>
+        </header>
         `
     }
 }
