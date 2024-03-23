@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Naest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+
+<body>
+
+    <special-header></special-header>
+
+    <section id="profile">
+        <div class="cart-top">
+          <img src="images/Profile-image.png" class="cart-image" alt="">
+        </div>
+        <div class="row g-4 profile-container">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div class="login">
+                <h2 class="login-heading">LOGIN</h2>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputNumber" class="form-label">Email</label>
+                    <input type="email" class="form-control payment-form" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control payment-form" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 password-admin">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Save this details</label> 
+                    </div>
+                    <div class="forgot-password">
+                        <a href="" class="password-change">Forgot Password</a>
+                    </div>
+                  </div>
+                  <button type="submit" class="login-button">LOGIN</button>
+                </form>
+              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+            <hr>
+            <div class="or">
+                <h2 class="or-heading">Or</h2>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div class="register">
+              <h2 class="register-heading">REGISTER</h2>
+              <form>
+                <button type="submit" class="facebook-button"><i class="fa-brands fa-facebook-f fa-lg margin"></i>Continue with facebook</button>
+                <button type="submit" class="google-button"><i class="fa-brands fa-google fa-lg margin"></i>Continue with google</button>
+                <button type="submit" class="apple-button"><i class="fa-brands fa-apple fa-lg margin"></i>Continue with google</button>
+                <button type="submit" class="register-button">REGISTER</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

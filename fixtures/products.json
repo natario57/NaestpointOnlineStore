@@ -1,0 +1,235 @@
+[
+    {
+      "model": "Product.products",
+      "pk": 1,
+      "fields": {
+        "product_name": "Lauren Ralph Polo",
+        "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
+        "product_price":"34,000",
+        "product_img_1": "images/product/Blue-polo.png",
+        "product_gender":"MALE",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 2,
+      "fields": {
+        "product_name": "Leo Design T-shirt",
+        "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
+        "product_price":"30,500",
+        "product_img_1": "images/product/Ash-suit.png",
+        "product_gender":"MALE",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 3,
+      "fields": {
+        "product_name": "Irish Silky Gown",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":"29,000",
+        "product_img_1": "images/product/Orange-gown.png",
+        "product_img_2": "images/product/redblack-gown.png",
+        "product_img_3": "images/product/Ash-suit.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 4,
+      "fields": {
+        "product_name": "Italian Cotton Gown",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":"26,500",
+        "product_img_1": "images/product/redblack-gown.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 5,
+      "fields": {
+        "product_name": "Canzo Seamless Stretch",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":"33,500",
+        "product_img_1": "images/product/white-gown.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 6,
+      "fields": {
+        "product_name": "Cashmir Ethical Corron",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":"28500",
+        "product_img_1": "images/product/black-suit.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+    "model": "Product.products",
+      "pk": 7,
+      "fields": {
+        "product_name": "Lauren Ralph Polo1",
+        "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
+        "product_price":"34000",
+        "product_img_1": "images/product/Cheque-shirt.png",
+        "product_gender":"MALE",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 8,
+      "fields": {
+        "product_name": "Leo Design T-shirt1",
+        "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
+        "product_price":"30500",
+        "product_img_1": "images/product/Jean-jacket.png",
+        "product_gender":"MALE",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 9,
+      "fields": {
+        "product_name": "Golden Weave Gown",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":"29000",
+        "product_img_1": "images/product/pink-gown.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 10,
+      "fields": {
+        "product_name": "British Wool Gown",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":"26500",
+        "product_img_1": "images/product/Orangeblack-gown.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 11,
+      "fields": {
+        "product_name": "Canzo Seamless Stretch1",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":33500,
+        "product_img_1": "images/product/Red-gown.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Product.products",
+      "pk": 12,
+      "fields": {
+        "product_name": "sartin Ethical Close",
+        "product_description": "202 N 1st Street, San Jose, CA",
+        "product_price":28500,
+        "product_img_1": "images/product/black-suit.png",
+        "product_gender":"FEMALE",
+        "prod_is_featured":"True",
+        "product_collection":"unbranded"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 1,
+      "fields": {
+        "advert_location":"CAROUSEL",
+        "advert_img":"images/advert/First-image.svg"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 2,
+      "fields": {
+        "advert_location":"CAROUSEL",
+        "advert_img":"images/advert/Second-image.svg"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 3,
+      "fields": {
+        "advert_location":"CAROUSEL",
+        "advert_img":"images/advert/Third-image.svg"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 4,
+      "fields": {
+        "advert_location":"sec2_advert",
+        "advert_img":"images/advert/Shopnow.svg"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 5,
+      "fields": {
+        "advert_location":"sec2_advert",
+        "advert_img":"images/advert/Deal-watch.svg"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 6,
+      "fields": {
+        "advert_location":"sec3_advert",
+        "advert_img":"images/advert/Bag-promo.png"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 7,
+      "fields": {
+        "advert_title":"Accessories",
+        "advert_text":"Sun Glasses, Bangles and Perfumes",
+        "advert_location":"sec4_advert",
+        "advert_img":"images/advert/Glasses.png"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 8,
+      "fields": {
+        "advert_title":"All kinds of shoes",
+        "advert_text":"Jordans, Oxford,Sketchers, Leather.",
+        "advert_location":"sec4_advert",
+        "advert_img":"images/advert/Jordans.png"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 9,
+      "fields": {
+        "advert_title":"Jean Trousers",
+        "advert_text":"Stone, Stock, Suede, Plain and light jeans",
+        "advert_location":"sec4_advert",
+        "advert_img":"images/advert/Jeans.png"
+      }
+    }
+
+]    
