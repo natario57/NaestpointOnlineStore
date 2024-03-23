@@ -1,66 +1,68 @@
-const productItemGenerator = ({ imgSrc, title, amount}) => {
-    const parentDiv = document.createElement('div')
-parentDiv.classList = "col-6 col-sm-6 col-md-6 col-lg-3 product-card"
+// const productItemGenerator = ({ imgSrc, title, amount}) => {
+//     const parentDiv = document.createElement('div')
+// parentDiv.classList = "col-6 col-sm-6 col-md-6 col-lg-3 product-card"
 
-const wrapperDiv = document.createElement('div')
-wrapperDiv.classList = "card card-design"
+// const wrapperDiv = document.createElement('div')
+// wrapperDiv.classList = "card card-design"
 
-const imageDiv = document.createElement('div')
-imageDiv.classList = "card-img"
+// const imageDiv = document.createElement('div')
+// imageDiv.classList = "card-img"
 
-const imgTag = document.createElement('img')
-imgTag.classList = "card-img-top"
-imgTag.src = imgSrc
-imgTag.alt = "" 
+// const imgTag = document.createElement('img')
+// imgTag.classList = "card-img-top"
+// imgTag.src = imgSrc
+// imgTag.alt = "" 
 
-imageDiv.appendChild(imgTag)
+// imageDiv.appendChild(imgTag)
 
-mainDiv = document.createElement('div')
-mainDiv.classList = "card-body product-body"
+// mainDiv = document.createElement('div')
+// mainDiv.classList = "card-body product-body"
 
-const h3 = document.createElement('h3')
-h3.classList = 'product-title'
-h3.innerText = title
+// const h3 = document.createElement('h3')
+// h3.classList = 'product-title'
+// h3.innerText = title
 
-const detailsDiv =  document.createElement('div')
-detailsDiv.classList = 'product-info'
+// const detailsDiv =  document.createElement('div')
+// detailsDiv.classList = 'product-info'
 
-const pTag = document.createElement('p')
-pTag.classList = 'product-price'
-pTag.innerText = amount
+// const pTag = document.createElement('p')
+// pTag.classList = 'product-price'
+// pTag.innerText = amount
 
-detailsDiv.appendChild(pTag)
+// detailsDiv.appendChild(pTag)
 
-const bottomDiv = document.createElement('div')
-bottomDiv.classList = "option-button"
+// const bottomDiv = document.createElement('div')
+// bottomDiv.classList = "option-button"
 
-const bottomImgTag1 = document.createElement('img')
-bottomImgTag1.src = "./images/Black-heart.svg"
-bottomImgTag1.classList = "nav-svg"
-bottomImgTag1.alt =""
+// const bottomImgTag1 = document.createElement('img')
+// bottomImgTag1.src = "./images/Black-heart.svg"
+// bottomImgTag1.classList = "nav-svg"
+// bottomImgTag1.alt =""
 
-const bottomImgTag2 = document.createElement('img')
-bottomImgTag2.src = "./images/Wheel-cart.svg"
-bottomImgTag2.classList = "nav-svg"
-bottomImgTag2.alt =""
+// const bottomImgTag2 = document.createElement('img')
+// bottomImgTag2.src = "./images/Wheel-cart.svg"
+// bottomImgTag2.classList = "nav-svg"
+// bottomImgTag2.alt =""
 
-bottomDiv.appendChild(bottomImgTag1)
-bottomDiv.appendChild(bottomImgTag2)
+// bottomDiv.appendChild(bottomImgTag1)
+// bottomDiv.appendChild(bottomImgTag2)
 
-detailsDiv.appendChild(bottomDiv)
+// detailsDiv.appendChild(bottomDiv)
 
-mainDiv.appendChild(h3)
-mainDiv.appendChild(detailsDiv)
+// mainDiv.appendChild(h3)
+// mainDiv.appendChild(detailsDiv)
 
-wrapperDiv.appendChild(imageDiv)
-wrapperDiv.appendChild(mainDiv)
+// wrapperDiv.appendChild(imageDiv)
+// wrapperDiv.appendChild(mainDiv)
 
-parentDiv.appendChild(wrapperDiv)
+// parentDiv.appendChild(wrapperDiv)
 
-return parentDiv
-}
+// return parentDiv
+// }
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  // Responsive Search button
     
 let searchBtn = document.querySelector('.searchBtn');
 let closeBtn = document.querySelector('.closeBtn');
@@ -78,45 +80,66 @@ let searchBox = document.querySelector('.searchBox');
         searchBtn.classList.remove('active')
     }
 
-const productItemsContainer = document.getElementById('productItemsContainer')
+    // View Product thumbnail
 
-const produtItems = [
-    {
-        imgSrc: 'images/redblack-gown.png',
-        title: 'Italian Cotton Gown',
-        amount: "N23,000.00"
-    },
-    {
-        imgSrc: 'images/white-gown.png',
-        title: 'Canzo Seamless Stretch',
-        amount: "N23,000.00"
-    },
-    {
-        imgSrc: 'images/black-suit.png',
-        title: 'Cashmir Ethical Corron',
-        amount: "N23,000.00"
-    },
-    {
-        imgSrc: 'images/Pink-gown.png',
-        title: 'Golden Weave Gown',
-        amount: "N23,000.00"
-    },
-    {
-        imgSrc: 'images/Orangeblack-gown.png',
-        title: '>British Wool Gown',
-        amount: "N23,000.00"
-    },
-    {
-        imgSrc: 'images/Red-gown.png',
-        title: 'Canzo Seamless Stretch',
-        amount: "N23,000.00"
-    }
-]
+    mainImg = document.getElementById('mainImg');
 
-produtItems.forEach(productItem => {
-    productItemsContainer.appendChild(productItemGenerator(productItem))
+    thumb1 =document.getElementById('thumb1');
+    thumb1Src = document.getElementById('thumb1').src;
+    thumb2 =document.getElementById('thumb2');
+    thumb2Src = document.getElementById('thumb2').src;
+    thumb3 =document.getElementById('thumb3');
+    thumb3Src = document.getElementById('thumb3').src;
+    
+    thumb1.addEventListener("click", function() {
+      mainImg.src=thumb1Src
+    })
+    thumb2.addEventListener("click", function() {
+      mainImg.src=thumb2Src
+    })
+    thumb3.addEventListener("click", function() {
+      mainImg.src=thumb3Src
+    })
 
-});
+// const productItemsContainer = document.getElementById('productItemsContainer')
+
+// const produtItems = [
+//     {
+//         imgSrc: 'images/redblack-gown.png',
+//         title: 'Italian Cotton Gown',
+//         amount: "N23,000.00"
+//     },
+//     {
+//         imgSrc: 'images/white-gown.png',
+//         title: 'Canzo Seamless Stretch',
+//         amount: "N23,000.00"
+//     },
+//     {
+//         imgSrc: 'images/black-suit.png',
+//         title: 'Cashmir Ethical Corron',
+//         amount: "N23,000.00"
+//     },
+//     {
+//         imgSrc: 'images/Pink-gown.png',
+//         title: 'Golden Weave Gown',
+//         amount: "N23,000.00"
+//     },
+//     {
+//         imgSrc: 'images/Orangeblack-gown.png',
+//         title: 'British Wool Gown',
+//         amount: "N23,000.00"
+//     },
+//     {
+//         imgSrc: 'images/Red-gown.png',
+//         title: 'Canzo Seamless Stretch',
+//         amount: "N23,000.00"
+//     }
+// ]
+
+// produtItems.forEach(productItem => {
+//     productItemsContainer.appendChild(productItemGenerator(productItem))
+
+// });
 
 
 
@@ -156,7 +179,7 @@ class SpecialHeader extends HTMLElement {
             <nav class="navbar navbar-expand-lg navbar-dark">
               <div class="container-fluid nav-container">
                 <div class="logo">
-                  <a class="navbar-brand" href="#"><img class="main-logo" src="images/Naest-Logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img class="main-logo" src="images/naest-point-logo.svg" alt="Logo"></a>
                 </div>
                 <div class="search-bar">
                   <form class="d-flex" role="search">
@@ -166,9 +189,9 @@ class SpecialHeader extends HTMLElement {
                 </div>
                 <div class="profile-link">
                   <li class="nav-item link-socials">
-                    <img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="...">
-                    <img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="...">
-                    <img src="./images/Bag.svg" class="nav-svg cart-icon" alt="...">
+                    <a href="profile.html"><img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="..."></a>
+                    <a href=""><img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="..."></a>
+                    <a href="cart.html"><img src="./images/Bag.svg" class="nav-svg cart-icon" alt="..."></a>
                     <div class="search">
                       <span class="ikon">
                         <img src="./images/Search-icon.svg" class="nav-svg searchBtn" alt="...">
@@ -221,16 +244,13 @@ class SpecialHeader extends HTMLElement {
                           <i class="bi bi-chevron-down"></i></a>
                         <ul class="dropdown-menu collection">
                           <div class="collection-list">
-                            <li><a class="dropdown-item" href="top-rose.html">TOPROSE CLOTHING</a></li>
-                            <li><a class="dropdown-item" href="cart.html">SEAMLESS COUTURE</a></li>
-                            <li><a class="dropdown-item" href="#">LEO DESIGN</a></li>
-                            <li><a class="dropdown-item" href="#">SOPHIE LINE</a></li>
+                            <li><a class="dropdown-item" href="top-rose.html" onmouseenter="changeImg('images/toprose-collection.svg')">TOPROSE CLOTHING</a></li>
+                            <li><a class="dropdown-item" href="cart.html" onmouseenter="changeImg('images/Shopnow2.svg')">SEAMLESS COUTURE</a></li>
+                            <li><a class="dropdown-item" href="profile.html" onmouseenter="changeImg('images/Leo-design.png')">LEO DESIGN</a></li>
+                            <li><a class="dropdown-item" href="#" onmouseenter="changeImg('images/Shopnow4.svg')">SOPHIE LINE</a></li>
                           </div>
                           <div class="collection-image">
-                            <img src="images/Shopnow.svg" class="img-hover hover1" alt="">
-                            <img src="images/Shopnow2.svg" class="img-hover hover2" alt="">
-                            <img src="images/Shopnow3.svg" class="img-hover hover3" alt="">
-                            <img src="images/Shopnow4.svg" class="img-hover hover4" alt="">
+                          <img src="images/Shopnow.svg" class="img-hover hover1" alt="" id="slider">
                           </div>
                         </ul>
                       </li>
@@ -262,7 +282,7 @@ class SpecialFooter extends HTMLElement {
             <div class="row">
             <div class="col-lg-3 last-message">
                 <div class="services-top">
-                <a class="navbar-brand" href="#"><img class="footer-logo" src="images/Naest-logo-black.png" alt="Logo"></a>
+                  <a class="navbar-brand" href="#"><img class="footer-logo" src="images/Naest-point-logo.svg" alt="Logo"></a>
                 </div>
             </div>
 
@@ -296,7 +316,7 @@ class SpecialFooter extends HTMLElement {
                 <h6 class="link-title">SUBSCRIBE TO NEWSLETTER</h6>
                 <P class="link-main newsletter-text">Get the lates stories, highlights, products to love and recomendations that are chosen for you</P>
                 <form class="newsletter-form">
-                    <input class="email-input" type="email" placeholder="Email" required>
+                    <input class="email-input" type="email" placeholder="Enter your email" required>
                     <button class="newsletter-button" type="submit"><i class="bi bi-arrow-right"></i></button>
                 </form>
                 </div>
@@ -330,7 +350,7 @@ class SpecialFooter extends HTMLElement {
             <div class="down-footer">
             <div class="address-design">
                 <div class="address-info">
-                <i class="fa-sharp fa-solid fa-location-dot" style="color: #111111;"></i>
+                <i class="fa-sharp fa-solid fa-location-dot" style="color: #ffffff;"></i>
                 <p class="link-main">14 Osborne Road Ikoyi, Lagos. Nigeria</p>
                 </div>
             </div>
@@ -350,3 +370,26 @@ class SpecialFooter extends HTMLElement {
 }
 
 customElements.define('special-footer', SpecialFooter)
+
+// Collection Nav image change
+
+function changeImg(imgchanger) {
+  document.getElementById('slider').src = imgchanger;
+}
+
+// Scroll reveal
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '40px',
+  duration: '2500',
+  reset: true
+})
+
+sr.reveal ('.about-container',{delay:100});
+sr.reveal ('.product-top',{delay:200});
+sr.reveal ('.carousel-inner',{delay:100});
+sr.reveal ('.promotion-image',{delay:100});
+sr.reveal ('.main-advert',{delay:100});
+
+
