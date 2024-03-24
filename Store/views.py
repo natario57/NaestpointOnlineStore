@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from Product.models import Products
 from .models import Advertisement, Collection
-
+from django.core.paginator import Paginator
 # Create your views here.
 
 
@@ -22,4 +22,9 @@ def home_page(request):
 def collection_page(request,collection_name):
     brand=Collection.objects.get(collection_name=collection_name)
     collection_prod=Products.objects.filter(collection_id=brand.id)
-    return render(request,"store/top-rose.html",{'design_brand':brand,"collection_products":collection_prod})
+    # collection_prod=Products.objects.filter(collection_id=0)
+
+    paginator = Paginator(collection_prod, 8)  # Show 8 products per page.
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,"store/top-rose.html",{"page_obj": page_obj,'design_brand':brand})

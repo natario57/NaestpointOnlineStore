@@ -12,8 +12,8 @@
   
 
   <!-- Collection -->
-
   <section id="collection">
+{%if page_obj.number == 1 %}
     <div class="row g-4 images">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 product-card">
             <div class="main-image">
@@ -47,15 +47,15 @@
             </div>
         </div>
     </div>
+{%endif%}
   </section>
-
   <section id="items">
     <div class="product-top">
         <h2 class="collection-heading">ITEMS FROM TOPROSE CLOTHING</h2>
     </div>
 
     <div class="row g-4">
-      {%for prod in collection_products%}
+      {%for prod in page_obj%}
         <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
           <div class="card card-design">
             <div class="card-img">
@@ -83,11 +83,19 @@
     </div>
         
       <div class="pages">
-          <button type="button" class="directions"> <a href="#"><i class="bi bi-chevron-left"></i></a></button>
-          <button type="button" class="page one active"> <a href="#">1</a></button>
-          <button type="button" class="page two"> <a href="#">2</a></button>
-          <button type="button" class="page three"> <a href="#">3</a></button>
-          <button type="button" class="directions"> <a href="#"><i class="bi bi-chevron-right"></i></a></button>
+          <span class="step-links">
+              {% if page_obj.has_previous %}
+              <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions"><i class="bi bi-chevron-left"></i></button></a>
+              <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="page three"> {{page_obj.previous_page_number }}</button></a> 
+              {% endif %}
+
+              <a href="?page={{ page_obj.number }}"><button type="button" class="page one"> {{page_obj.number}}.</button></a>
+              {% if page_obj.has_next %}
+              <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="page two"> {{page_obj.next_page_number }}</button></a>
+              <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="directions"><i class="bi bi-chevron-right"></i></button></a>
+              {% endif %}
+          </span>
+      </div>
       </div>
   </section>
 {%endblock content%}
