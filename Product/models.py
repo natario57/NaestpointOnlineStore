@@ -1,4 +1,5 @@
 from django.db import models
+from Store.models import Collection
 
 # Create your models here.
 
@@ -15,7 +16,9 @@ class Products(models.Model):
         ('3', u'KIDS'),
     ))
     prod_is_featured=models.BooleanField(default=False)
-    product_collection=models.CharField(max_length=200,default="unbranded")
+    # product_collection=models.CharField(max_length=200,default="unbranded")
+    collection = models.ForeignKey(Collection, on_delete=models.CASCADE,default=0)
+
 
 
     

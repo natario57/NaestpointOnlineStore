@@ -65,6 +65,7 @@
     <div class="row g-4">
         {%for prod in prod_suggestions%}
       <div class="col-6 col-sm-6 col-md-4 col-lg-2 product-card">
+        <a href="{% url 'single-prod-page' prod_name=prod.product_name %}">
         <div class="card card-design">
           <div class="card-img">
             <img src="../../media/{{prod.product_img_1}}" class="card-img-top" alt="...">
@@ -80,6 +81,7 @@
             </div>
           </div>
         </div>
+      </a>
       </div>
       {%endfor%}
     </div>

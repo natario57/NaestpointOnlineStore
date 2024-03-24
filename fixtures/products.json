@@ -1,4 +1,69 @@
 [
+  {
+    "model": "Store.collection",
+    "pk": 0,
+    "fields": {
+      "collection_name": "unbranded",
+      "collection_description": "no brand featured design"
+    }
+  },
+
+  {
+    "model": "Store.collection",
+    "pk": 1,
+    "fields": {
+      "collection_name": "TOPROSE CLOTHING",
+      "collection_description": "Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events, Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events.",
+      "collection_img_1":"images/collection/Toprose-img.svg",
+      "collection_img_2":"images/collection/brownandorange.png",
+      "collection_img_3":"images/collection/Toprose-pic1.svg",
+      "collection_img_4":"images/collection/Toprose-pic2.png",
+      "collection_img_5":"images/collection/Toprose-shop.svg"
+    }
+  },
+
+  {
+    "model": "Store.collection",
+    "pk": 2,
+    "fields": {
+      "collection_name": "SEAMLESS COUTOURE",
+      "collection_description": "Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events, Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events.",
+      "collection_img_1":"images/collection/Toprose-img.svg",
+      "collection_img_2":"images/collection/brownandorange.png",
+      "collection_img_3":"images/collection/Toprose-pic1.svg",
+      "collection_img_4":"images/collection/Toprose-pic2.png",
+      "collection_img_5":"images/collection/Toprose-shop.svg"
+    }
+  },
+
+  {
+    "model": "Store.collection",
+    "pk": 3,
+    "fields": {
+      "collection_name": "LEO DESIGN",
+      "collection_description": "Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events, Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events.",
+      "collection_img_1":"images/collection/Leo-design.png",
+      "collection_img_2":"images/collection/brownandorange.png",
+      "collection_img_3":"images/collection/Toprose-pic1.svg",
+      "collection_img_4":"images/collection/Toprose-pic2.png",
+      "collection_img_5":"images/collection/Toprose-shop.svg"
+    }
+  },
+
+  {
+    "model": "Store.collection",
+    "pk": 4,
+    "fields": {
+      "collection_name": "SOPHIE LINE",
+      "collection_description": "Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events, Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events.",
+      "collection_img_1":"images/collection/Toprose-img.svg",
+      "collection_img_2":"images/collection/brownandorange.png",
+      "collection_img_3":"images/collection/Toprose-pic1.svg",
+      "collection_img_4":"images/collection/Toprose-pic2.png",
+      "collection_img_5":"images/collection/Toprose-shop.svg"
+    }
+  },
+
     {
       "model": "Product.products",
       "pk": 1,
@@ -7,8 +72,7 @@
         "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
         "product_price":"34,000",
         "product_img_1": "images/product/Blue-polo.png",
-        "product_gender":"MALE",
-        "product_collection":"unbranded"
+        "product_gender":"MALE"
       }
     },
     {
@@ -19,8 +83,7 @@
         "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
         "product_price":"30,500",
         "product_img_1": "images/product/Ash-suit.png",
-        "product_gender":"MALE",
-        "product_collection":"unbranded"
+        "product_gender":"MALE"
       }
     },
     {
@@ -34,8 +97,7 @@
         "product_img_2": "images/product/redblack-gown.png",
         "product_img_3": "images/product/Ash-suit.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -47,8 +109,7 @@
         "product_price":"26,500",
         "product_img_1": "images/product/redblack-gown.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -60,8 +121,7 @@
         "product_price":"33,500",
         "product_img_1": "images/product/white-gown.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -73,8 +133,7 @@
         "product_price":"28500",
         "product_img_1": "images/product/black-suit.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -85,8 +144,7 @@
         "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
         "product_price":"34000",
         "product_img_1": "images/product/Cheque-shirt.png",
-        "product_gender":"MALE",
-        "product_collection":"unbranded"
+        "product_gender":"MALE"
       }
     },
     {
@@ -97,8 +155,7 @@
         "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
         "product_price":"30500",
         "product_img_1": "images/product/Jean-jacket.png",
-        "product_gender":"MALE",
-        "product_collection":"unbranded"
+        "product_gender":"MALE"
       }
     },
     {
@@ -110,8 +167,7 @@
         "product_price":"29000",
         "product_img_1": "images/product/pink-gown.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -123,8 +179,7 @@
         "product_price":"26500",
         "product_img_1": "images/product/Orangeblack-gown.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -136,8 +191,7 @@
         "product_price":33500,
         "product_img_1": "images/product/Red-gown.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {
@@ -149,8 +203,7 @@
         "product_price":28500,
         "product_img_1": "images/product/black-suit.png",
         "product_gender":"FEMALE",
-        "prod_is_featured":"True",
-        "product_collection":"unbranded"
+        "prod_is_featured":"True"
       }
     },
     {

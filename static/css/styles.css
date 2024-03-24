@@ -15,9 +15,6 @@
     --color-primary2: #145d46;
     --color-white: #ffffff;
     --color-black: #111111;
-
-
-
 }
 
 html {
@@ -53,6 +50,10 @@ body {
 .primary-button a {
     text-decoration: none;
     color: var(--color-white);
+}
+
+a{
+    text-decoration: none;
 }
 
 h1 {
@@ -1927,6 +1928,7 @@ input[type=radio] {
     font-size: .9rem;
     font-weight: 400;
     margin: 0 0 .8rem;
+    color: #111111;
 }
 
 .option2-button {

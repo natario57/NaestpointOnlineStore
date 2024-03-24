@@ -1,22 +1,15 @@
 
 <!DOCTYPE html>
 <html>
+  {% extends "base.html" %}
+  {% load static %}
 
-<head>
-  <meta charset="utf-8">
-  <title>Naest</title>
-  <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-</head>
 
 <body>
+{%block content%}
 
   <!-- Nav Bar -->
   
-  <special-header></special-header>
 
   <!-- Collection -->
 
@@ -24,33 +17,33 @@
     <div class="row g-4 images">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 product-card">
             <div class="main-image">
-                <img src="images/Toprose-img.svg" class="card-img-top" alt="...">
+                <img src="../../media/{{design_brand.collection_img_1}}" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 product-card">
             <div class="main-image">
-                <img src="images/brownandorange.png" class="card-img-top" alt="...">
+                <img src="../../media/{{design_brand.collection_img_2}}" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 product-card">
             <div class="about-collection">
-                <h2 class="singleproduct-heading">ABOUT TOPROSE CLOTHING</h2>
-                <p class="singleproduct-description">Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.<br> WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events, Crafted from an ultra luxe heavy weight viscose rib knit, Irish cotton hugs your curves like no other. It has a peek-a-boob plunge neck with ties that are tipped with luxurious crystal droppers and the exaggerated cuffs add to the drama. We love how it skims over your curves for the most flattering silhouette and falls to a floor sweeping maxi hem.<br> WHERE TO WEAR: Romantic date nights, stylish dinner dates, champagne bars, glam functions and events.</p>
+                <h2 class="singleproduct-heading">ABOUT {{design_brand.collection_name}}</h2>
+                <p class="singleproduct-description">{{design_brand.collection_description}}</p>
             </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
             <div class="main-image">
-                <img src="images/Toprose-pic1.svg" class="card-img-top" alt="...">
+                <img src="../../media/{{design_brand.collection_img_3}}" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
             <div class="main-image">
-                <img src="images/Toprose-pic2.png" class="card-img-top" alt="...">
+                <img src="../../media/{{design_brand.collection_img_4}}" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 product-card">
             <div class="landscape-image">
-                <img src="images/Toprose-shop.svg" class="card-img-landscape" alt="...">
+                <img src="../../media/{{design_brand.collection_img_5}}" class="card-img-landscape" alt="...">
             </div>
         </div>
     </div>
@@ -62,13 +55,14 @@
     </div>
 
     <div class="row g-4">
+      {%for prod in collection_products%}
         <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
           <div class="card card-design">
             <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
+              <img src="../../media/{{prod.product_img_1}}" class="card-img-top" alt="...">
             </div>
             <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
+              <h3 class="product-title">{{prod.product_name}}</h3>
               <div class="sizes">
                   <button type="button" class="size sm active"> <a href="#">SM</a></button>
                   <button type="button" class="size md"> <a href="#">MD</a></button>
@@ -76,177 +70,18 @@
                   <button type="button" class="size xl"> <a href="#">XL</a></button>
               </div>
               <div class="product-info">
-                <p class="product-price">N23,000.00</p>
+                <p class="product-price">{{prod.product_price}}</p>
                 <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
+                  <img src="{% static 'images/Black-heart.svg' %}" class="nav-svg" alt="...">
+                  <img src="{% static 'images/Wheel-cart.svg' %}" class="nav-svg" alt="...">
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 product-card">
-          <div class="card card-design">
-            <div class="card-img">
-              <img src="images/Yellow-trouser-top.svg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body product-body">
-              <h3 class="product-title">Italian Cotton Gown</h3>
-              <div class="sizes">
-                  <button type="button" class="size sm active"> <a href="#">SM</a></button>
-                  <button type="button" class="size md"> <a href="#">MD</a></button>
-                  <button type="button" class="size lg"> <a href="#">LG</a></button>
-                  <button type="button" class="size xl"> <a href="#">XL</a></button>
-              </div>
-              <div class="product-info">
-                <p class="product-price">N23,000.00</p>
-                <div class="option-button">
-                  <img src="./images/Black-heart.svg" class="nav-svg" alt="...">
-                  <img src="./images/Wheel-cart.svg" class="nav-svg" alt="...">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        {%endfor%}
+    </div>
+        
       <div class="pages">
           <button type="button" class="directions"> <a href="#"><i class="bi bi-chevron-left"></i></a></button>
           <button type="button" class="page one active"> <a href="#">1</a></button>
@@ -255,10 +90,6 @@
           <button type="button" class="directions"> <a href="#"><i class="bi bi-chevron-right"></i></a></button>
       </div>
   </section>
-
-  <special-footer></special-footer>
-
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+{%endblock content%}
 </body>
 </html>
