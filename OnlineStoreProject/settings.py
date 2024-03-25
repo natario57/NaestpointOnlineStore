@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Product.apps.ProductConfig",
     "Store.apps.StoreConfig",
+    "User.apps.UserConfig",
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [
@@ -125,3 +127,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 MEDIA_ROOT= os.path.join(BASE_DIR,"media")
 MEDIA_URL= "/media/"
 FIXTURE_DIRS = ['fixtures/']
+
+# model for authenticating users
+AUTH_USER_MODEL = "User.CustomUser"
