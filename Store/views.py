@@ -28,3 +28,12 @@ def collection_page(request,collection_name):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
     return render(request,"store/top-rose.html",{"page_obj": page_obj,'design_brand':brand})
+
+
+def whats_hot_page(request):
+    all_products=Products.objects.all().order_by("-id").values()
+    advert=Advertisement.objects.get(advert_location="whats_hot_advert")
+    paginator = Paginator(all_products, 10)  # Show 10 products per page.
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,"store/whats-hot.html",{"page_obj": page_obj,"advert":advert})

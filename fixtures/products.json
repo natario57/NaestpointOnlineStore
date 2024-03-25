@@ -130,7 +130,7 @@
       "fields": {
         "product_name": "Cashmir Ethical Corron",
         "product_description": "202 N 1st Street, San Jose, CA",
-        "product_price":"28500",
+        "product_price":"28,500",
         "product_img_1": "images/product/black-suit.png",
         "product_gender":"FEMALE",
         "prod_is_featured":"True"
@@ -142,7 +142,7 @@
       "fields": {
         "product_name": "Lauren Ralph Polo1",
         "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
-        "product_price":"34000",
+        "product_price":"34,000",
         "product_img_1": "images/product/Cheque-shirt.png",
         "product_gender":"MALE"
       }
@@ -153,7 +153,7 @@
       "fields": {
         "product_name": "Leo Design T-shirt1",
         "product_description": "This material is meant from a jean factory in Naples, designed and crafted by Ferdinand",
-        "product_price":"30500",
+        "product_price":"30,500",
         "product_img_1": "images/product/Jean-jacket.png",
         "product_gender":"MALE"
       }
@@ -164,7 +164,7 @@
       "fields": {
         "product_name": "Golden Weave Gown",
         "product_description": "202 N 1st Street, San Jose, CA",
-        "product_price":"29000",
+        "product_price":"29,000",
         "product_img_1": "images/product/pink-gown.png",
         "product_gender":"FEMALE",
         "prod_is_featured":"True"
@@ -176,7 +176,7 @@
       "fields": {
         "product_name": "British Wool Gown",
         "product_description": "202 N 1st Street, San Jose, CA",
-        "product_price":"26500",
+        "product_price":"26,500",
         "product_img_1": "images/product/Orangeblack-gown.png",
         "product_gender":"FEMALE",
         "prod_is_featured":"True"
@@ -188,7 +188,7 @@
       "fields": {
         "product_name": "Canzo Seamless Stretch1",
         "product_description": "202 N 1st Street, San Jose, CA",
-        "product_price":33500,
+        "product_price":"33,500",
         "product_img_1": "images/product/Red-gown.png",
         "product_gender":"FEMALE",
         "prod_is_featured":"True"
@@ -200,7 +200,7 @@
       "fields": {
         "product_name": "sartin Ethical Close",
         "product_description": "202 N 1st Street, San Jose, CA",
-        "product_price":28500,
+        "product_price":"28,500",
         "product_img_1": "images/product/black-suit.png",
         "product_gender":"FEMALE",
         "prod_is_featured":"True"
@@ -282,6 +282,16 @@
         "advert_text":"Stone, Stock, Suede, Plain and light jeans",
         "advert_location":"sec4_advert",
         "advert_img":"images/advert/Jeans.png"
+      }
+    },
+    {
+      "model": "Store.advertisement",
+      "pk": 10,
+      "fields": {
+        "advert_title":"Beach wears",
+        "advert_text":"the best beach wears available just for you",
+        "advert_location":"whats_hot_advert",
+        "advert_img":"images/advert/Beachwears-pics.svg"
       }
     }
 
