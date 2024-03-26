@@ -67,17 +67,26 @@ window.addEventListener('DOMContentLoaded', () => {
 let searchBtn = document.querySelector('.searchBtn');
 let closeBtn = document.querySelector('.closeBtn');
 let searchBox = document.querySelector('.searchBox');
+let cartIcon = document.querySelector('.cartIcon');
+let closeCart = document.querySelector('.closeCart');
+let cartTab = document.querySelector('.cartTab');
 
     searchBtn.onclick = function () {
         searchBox.classList.add('active')
         closeBtn.classList.add('active')
         searchBtn.classList.add('active')
     }
-
     closeBtn.onclick = function () {
         searchBox.classList.remove('active')
         closeBtn.classList.remove('active')
         searchBtn.classList.remove('active')
+    }
+
+    cartIcon.onclick = function () {
+        cartTab.classList.add('showcart')
+    }
+    closeCart.onclick = function () {
+        cartTab.classList.remove('showcart')
     }
 
     // View Product thumbnail
@@ -190,8 +199,8 @@ class SpecialHeader extends HTMLElement {
                 <div class="profile-link">
                   <li class="nav-item link-socials">
                     <a href="profile.html"><img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="..."></a>
-                    <a href=""><img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="..."></a>
-                    <a href="cart.html"><img src="./images/Bag.svg" class="nav-svg cart-icon" alt="..."></a>
+                    <a href="register.html"><img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="..."></a>
+                    <a href="login.html"><img src="./images/Bag.svg" class="nav-svg cart-icon" alt="..."></a>
                     <div class="search">
                       <span class="ikon">
                         <img src="./images/Search-icon.svg" class="nav-svg searchBtn" alt="...">
@@ -246,7 +255,7 @@ class SpecialHeader extends HTMLElement {
                           <div class="collection-list">
                             <li><a class="dropdown-item" href="top-rose.html" onmouseenter="changeImg('images/toprose-collection.svg')">TOPROSE CLOTHING</a></li>
                             <li><a class="dropdown-item" href="cart.html" onmouseenter="changeImg('images/Shopnow2.svg')">SEAMLESS COUTURE</a></li>
-                            <li><a class="dropdown-item" href="profile.html" onmouseenter="changeImg('images/Leo-design.png')">LEO DESIGN</a></li>
+                            <li><a class="dropdown-item" href="login.html" onmouseenter="changeImg('images/Leo-design.png')">LEO DESIGN</a></li>
                             <li><a class="dropdown-item" href="#" onmouseenter="changeImg('images/Shopnow4.svg')">SOPHIE LINE</a></li>
                           </div>
                           <div class="collection-image">
