@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% load static %}
+    <!-- {% load django_bootstrap5 %} -->
+    <!-- {%load crispy_forms_tags %} -->
+  
+  <body>
+  {%block content%}
+
+
+    <section id="register">
+      <div class="register-container" >
+        <h2 class="login-heading">REGISTER</h2>
+        <form method="post" action="" novalidate>
+            {% csrf_token %}
+            <!-- {% bootstrap_form form %} -->
+            <!-- {{ form | crispy }}  -->
+
+            {{ form.non_field_errors }}
+          <div class="mb-3">
+            <p class=""> {{form.first_name.errors}}</p>
+            <label for="{{ form.first_name.id_for_label }}" class="form-label">First Name</label>
+            <input type="text" class="form-control payment-form"  {{form.first_name}}
+          </div>
+          <div class="mb-3">
+            {{form.last_name.errors}}
+            <label for="{{ form.last_name.id_for_label }}" class="form-label">Last Name</label>
+            <input type="text" class="form-control payment-form"  {{form.last_name}}
+          </div>
+        
+          <div class="mb-3">
+            {{form.email.errors}}
+            <label for="{{form.email.id_for_label}}" class="form-label">Email</label>
+            <input type="email" class="form-control payment-form" {{form.email}}
+          </div>
+          <div class="mb-3">
+            {{form.phone_no.errors}}
+            <label for="{{form.phone_no.id_for_label}}" class="form-label">Phone Number </label>
+            <input type="tel" class="form-control payment-form" {{form.phone_no}}
+          </div>
+          <div class="mb-3">
+            {{form.address.errors}}
+            <label for="{{form.address.id_for_label}}" class="form-label">Address</label>
+            <input type="text" class="form-control payment-form" {{form.address}}
+          </div>
+          <div class="mb-3">
+            {{form.password1.errors}}
+            <label for="{{form.password1.id_for_label}}" class="form-label">Password</label>
+            <input type="password" class="form-control payment-form" {{form.password1}}
+          </div>
+
+          <div class="mb-3">
+            {{form.password2.errors}}
+            <label for="{{form.password1.id_for_label}}" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control payment-form" {{form.password2}}
+          </div>
+          <button type="submit" class="register-button">REGISTER</button>
+        </form>
+          <p class="register-message">Already have an account? <a href="{% url 'login-page' %}">Click here to login</a></p>
+        </div>
+      </div>
+    </section>
+    {%endblock content%}
+
+</body>
+</html>

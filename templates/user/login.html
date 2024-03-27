@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% load static %}
+  
+    <!-- {% load django_bootstrap5 %} -->
+    <!-- {%load crispy_forms_tags %} -->
+  <body>
+  {%block content%}
+
+
+    <section id="login">
+      <div class="login-container">
+        <h2 class="login-heading">LOGIN</h2>
+        <form method="post" action="{% url 'login-page' %}">
+            {% csrf_token %}
+            <!-- {% bootstrap_form form %} -->
+            <!-- {{ form | crispy }}  -->
+            {{ form.non_field_errors }}
+          <div class="mb-3">
+            {{form.username.errors}}
+            <label for="{{form.username.id_for_label}}" class="form-label">Email</label>
+            <input type="input" class="form-control payment-form" id="exampleInputEmail1" {{form.username}}
+          </div>
+          <div class="mb-3">
+            {{form.password.errors}}
+            <label for="{{ form.password.id_for_label }}" class="form-label">Password</label>
+            <input type="password" class="form-control payment-form" id="exampleInputPassword1"{{form.password}}
+          </div>
+          <div class="mb-3 password-admin">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Save this details</label> 
+            </div>
+            <div class="forgot-password">
+              <a href="" class="password-change">Forgot Password</a>
+            </div>
+          </div>
+          <button type="submit" class="login-button">LOGIN</button>
+        </form>
+          <p class="register-message">Don't have an account? <a href="{% url 'register-page' %}">Click here to register</a></p>
+        </div>
+      </div>
+    </section>
+    {%endblock content%}
+
+</body>
+</html>

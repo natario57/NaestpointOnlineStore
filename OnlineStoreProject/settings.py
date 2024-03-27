@@ -38,11 +38,19 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # my created apps
     "Product.apps.ProductConfig",
     "Store.apps.StoreConfig",
     "User.apps.UserConfig",
+    # 3rd party apps
     "phonenumber_field",
+    "django_bootstrap5",
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -130,3 +138,8 @@ FIXTURE_DIRS = ['fixtures/']
 
 # model for authenticating users
 AUTH_USER_MODEL = "User.CustomUser"
+
+# url route to redirect to after login authentication
+LOGIN_REDIRECT_URL="home-page"
+# url route to redirect to after logout
+LOGOUT_REDIRECT_URL = 'home-page'
