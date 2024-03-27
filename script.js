@@ -200,7 +200,8 @@ class SpecialHeader extends HTMLElement {
                   <li class="nav-item link-socials">
                     <a href="profile.html"><img src="./images/Avatar.svg" class="nav-svg profile-icon" alt="..."></a>
                     <a href="register.html"><img src="./images/Heart.svg" class="nav-svg favourite-icon" alt="..."></a>
-                    <a href="login.html"><img src="./images/Bag.svg" class="nav-svg cart-icon" alt="..."></a>
+                    <img src="./images/Bag.svg" class="nav-svg cart-icon" alt="...">
+                    <span class="number-display">0</span>
                     <div class="search">
                       <span class="ikon">
                         <img src="./images/Search-icon.svg" class="nav-svg searchBtn" alt="...">
@@ -264,12 +265,12 @@ class SpecialHeader extends HTMLElement {
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/single-product.html">SINGLE PRODUCT</a>
+                        <a class="nav-link" href="/single-product.html">CONTACT US</a>
                       </li>
                     </ul>
                   </div>
                   <div class="small-board">
-                    <h6 class="board-title">BLACK FRIDAYS</h3>
+                    <h6 class="board-title">BLACK FRIDAYS</h6>
                     <p class="board-text">26th May 2024</p>
                   </div>
                 </div>

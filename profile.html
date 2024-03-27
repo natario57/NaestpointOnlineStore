@@ -21,28 +21,62 @@
         <img src="images/Profile-image.png" class="cart-image" alt="">
       </div>
 
-      <div class="login">
-        <h2 class="login-heading">LOGIN</h2>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputNumber" class="form-label">Email</label>
-            <input type="email" class="form-control payment-form" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control payment-form" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 password-admin">
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Save this details</label> 
+      <div class="row g-4 cart-container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+          <div class="account-left">
+            <div class="account-option">
+              <div class="account-description intro">
+                <i class="bi bi-person-square"></i>
+                <p class="account-info">My Details</p>
+              </div>
+              <div class="account-description">
+                <i class="bi bi-bag-check"></i>
+                <p class="account-info">Order History</p>
+              </div>
+              <div class="account-description">
+                <i class="bi bi-file-lock2"></i>
+                <p class="account-info">Change password</p>
+              </div>
+              <div class="account-description">
+                <i class="bi bi-box-arrow-left"></i>
+                <p class="account-info">Logout</p>
+              </div>
             </div>
-            <div class="forgot-password">
-              <a href="" class="password-change">Forgot Password</a>
-            </div>
           </div>
-          <button type="submit" class="login-button">LOGIN</button>
-          <p class="register-message">Don't have an account? <a href="">Click here to register</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+          <div class="account-right">
+            <h2 class="cart-heading">MY DETAILS</h2>
+            <hr class="heading-line">
+            <i class="bi bi-pencil-square"></i>
+            <form>
+              <div class="mb-3 name-input">
+                <div class="first-name">
+                  <label for="exampleInputName" class="form-label">First Name</label>
+                  <input type="text" class="form-control payment-form" id="exampleInputName" aria-describedby="emailHelp">
+                </div>
+                <div class="last-name">
+                  <label for="exampleInputName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control payment-form" id="exampleInputName" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="mb-3 name-input">
+                <div class="first-name">
+                  <label for="exampleInputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control payment-form" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="last-name">
+                  <label for="exampleInputNumber" class="form-label">Phone Number</label>
+                  <input type="number" class="form-control payment-form" id="exampleInputNumber1" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control payment-form" id="exampleInputAddress1" aria-describedby="emailHelp">
+              </div>
+              <button type="submit" class="account-submit-button">SAVE</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
